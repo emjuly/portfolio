@@ -25,16 +25,13 @@ section {
     padding: 2rem 9%;
 }
 
-
-.heading{
+.heading {
     text-align: center;
     font-size: 4rem;
     color: #333;
     padding: 1rem;
     margin: 2rem;
-   
-} 
-
+}
 
 .btn {
     display: inline-block;
@@ -51,7 +48,7 @@ section {
     background: var(--blue);
 }
 
-
+/* Header Styles */
 header {
     position: fixed;
     top: 0;
@@ -88,10 +85,7 @@ header .icons a {
     margin-left: 0.7rem;
 }
 
-header .navbar a:hover {
-    color: var(--blue);
-}
-
+header .navbar a:hover,
 header .icons a:hover {
     color: var(--blue);
 }
@@ -110,34 +104,33 @@ header .fa-bars {
     display: none;
 }
 
-.home{
+/* Home Section */
+.home {
     display: flex;
     align-items: center;
     min-height: 100vh;
     background: url(842D9396-2AFA-43C3-ACB5-BB7F8A2CDDE6-8552E864-BF3D-4017-B0E3-3E9845FB1665.jpg) no-repeat;
     background-size: cover;
     background-position: center;
-
 }
 
-.home .content{
+.home .content {
     max-width: 50rem;
 }
 
-.home .content h3{
+.home .content h3 {
     font-size: 6rem;
     color: #fff; 
 }
 
-.home .content span{
+.home .content span {
     font-size: 3.5rem;
     color: #fff;
     padding: 1rem 0; 
     line-height: 1.5;
 }
 
-/*--------------------------------------------------------------------------------------------------*/
-
+/* About Me Section */
 .aboutme .row {
     display: flex;
     align-items: center;
@@ -152,12 +145,11 @@ header .fa-bars {
 }
 
 .aboutme .image-container img {
-    width: 80%; /* Adjust to fit the container */
-    border-radius: 50%; /* Makes the image circular */
-    object-fit: cover; /* Ensures the image covers the area */
-    height: auto; /* Maintain aspect ratio */
+    width: 80%;
+    border-radius: 50%;
+    object-fit: cover;
+    height: auto; 
 }
-
 
 .aboutme .row .content {
     flex: 1 1 50%; 
@@ -175,14 +167,11 @@ header .fa-bars {
     color: #666;
 }
 
-/*--------------------------------------------------------------------------------------------------*/
-
-
+/* Education Section */
 .education {
     background: #eee; 
     padding: 5rem 0; 
 }
-
 
 .education-item {
     background: #fff; 
@@ -194,18 +183,12 @@ header .fa-bars {
     align-items: center; 
     gap: 1rem; 
     margin: 1.5rem; 
-     
-
 }
-
-
-
 
 .education-icon img {
     width: 100px; 
     height: auto;
 }
-
 
 .education-item:nth-child(1) .education-icon img {
     width: 150px; 
@@ -213,32 +196,14 @@ header .fa-bars {
 }
 
 .program-info {
-    font-size: 1.2rem; /* Adjust size as needed */
-    color: #666; /* Change color as desired */
-    margin-top: 0.5rem; /* Adds space above the text */
-    text-align: center; /* Center the text, optional */
+    font-size: 1.2rem; 
+    color: #666; 
+    margin-top: 0.5rem; 
+    text-align: center; 
 }
 
-
-
-.info {
-    text-align: center;
-}
-
-.info h3 {
-    font-size: 1.8rem;
-    margin-bottom: 0.5rem;
-}
-
-.info span {
-    font-size: 1.2rem;
-    color: #555;
-}
-
-
-/*--------------------------------------------------------------------------------------------------*/
-
-.skills{
+/* Skills Section */
+.skills {
     background: #fff;
 }
 
@@ -280,9 +245,7 @@ header .fa-bars {
     width: 75%; 
 }
 
-
-/*--------------------------------------------------------------------------------------------------*/
-
+/* Contact Section */
 .contact-container {
     display: flex;
     justify-content: space-between; 
@@ -304,7 +267,6 @@ header .fa-bars {
     font-size: var(--larger-font-size);
     line-height: 1.8;
 }
-
 
 .contact-details {
     flex: 1; 
@@ -336,7 +298,6 @@ header .fa-bars {
     height: 100px; 
 }
 
-
 .button-container {
     display: flex;
     justify-content: center; 
@@ -359,14 +320,9 @@ header .fa-bars {
     background: var(--blue); 
 }
 
-
 body {
     color: black; 
 }
-
-/*--------------------------------------------------------------------------------------------------*/
-
-
 
 /* Media Queries */
 @media (max-width: 991px) {
@@ -382,9 +338,8 @@ body {
         padding: 2rem;
     }
 
-    .home{
+    .home {
         background-position: left;
-
     }
 }
 
@@ -416,29 +371,26 @@ body {
         display: block;
     }
 
-    .home .content h3{
+    .home .content h3 {
         font-size: 5rem;
-
     }
 
-    .home .content span{
+    .home .content span {
         font-size: 2.5rem;
-
-    }
-
-
-
-@media (max-width:450px) {
-        html{
-            font-size: 50%;
-    
-        }
-
-        .heading{
-            font-size: 3rem;
-        }
-
-
-        
     }
 }
+
+@media (max-width: 450px) {
+    html {
+        font-size: 50%;
+    }
+
+    .heading {
+        font-size: 3rem;
+    }
+
+    .skills-container {
+        grid-template-columns: 1fr; 
+    }
+}
+
